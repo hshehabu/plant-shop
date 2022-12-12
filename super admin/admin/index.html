@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Mentor - Bootstrap 4 Admin Dashboard Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Admin template that can be used to build dashboards for CRM, CMS, etc." />
+    <meta name="author" content="Potenza Global Solutions" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- app favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- plugin stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css" />
+    <!-- app style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- begin app -->
+    <div class="app">
+        <!-- begin app-wrap -->
+        <div class="app-wrap">
+            <!-- begin pre-loader -->
+            <div class="loader">
+                <div class="h-100 d-flex justify-content-center">
+                    <div class="align-self-center">
+                        <img src="assets/img/loader/loader.svg" alt="loader">
+                    </div>
+                </div>
+            </div>
+            <!-- end pre-loader -->
+            <!-- begin app-header -->
+            <header class="app-header top-bar">
+                <!-- begin navbar -->
+                <nav class="navbar navbar-expand-md">
+
+                    <!-- begin navbar-header -->
+                    <div class="navbar-header d-flex align-items-center">
+                        <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
+                            <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti ti-align-left"></i>
+                    </button>
+                    <!-- end navbar-header -->
+                    <!-- begin navigation -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navigation d-flex">
+                            <ul class="navbar-nav nav-left">
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="nav-link sidebar-toggle">
+                                        <i class="ti ti-align-right"></i>
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item full-screen d-none d-lg-block" id="btnFullscreen">
+                                    <a href="javascript:void(0)" class="nav-link expand">
+                                        <i class="icon-size-fullscreen"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav nav-right ml-auto">
+                              
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link search" href="javascript:void(0)">
+                                        <i class="ti ti-search"></i>
+                                    </a>
+                                    <div class="search-wrapper">
+                                        <div class="close-btn">
+                                            <i class="ti ti-close"></i>
+                                        </div>
+                                        <div class="search-content mr-5">
+                                            <form>
+                                                <div class="form-group">
+                                                    <i class="ti ti-search magnifier"></i>
+                                                    <input type="text" class="form-control autocomplete"
+                                                        placeholder="Search Here" id="autocomplete-ajax"
+                                                        autofocus="autofocus">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown user-profile">
+                                    <a href="javascript:void(0)" class="nav-link dropdown-toggle " id="navbarDropdown4"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/img/avtar/02.jpg" alt="avtar-img">
+                                        <span class="bg-success user-status"></span>
+                                    </a>
+                                    <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                                        <div class="bg-gradient px-4 py-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="mr-1">
+                                                    <h4 class="text-white mb-0">Alice Williams</h4>
+                                                    <small class="text-white">Henry@example.com</small>
+                                                </div>
+                                                <a href="auth-login.html" class="text-white font-20 tooltip-wrapper"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Logout"> <i class="zmdi zmdi-power"></i></a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end navigation -->
+                </nav>
+                <!-- end navbar -->
+            </header>
+            <!-- end app-header -->
+            <!-- begin app-container -->
+            <div class="app-container">
+                <!-- begin app-nabar -->
+                <aside class="app-navbar">
+                    <!-- begin sidebar-nav -->
+                    <div class="sidebar-nav scrollbar scroll_light">
+                        <ul class="metismenu " id="sidebarNav">
+                            <li class="nav-static-title">Personal</li>
+
+                            <a class="link ml-2" href="index.html" aria-expanded="false">
+                                <i class="nav-icon ti ti-home mr-3"></i>
+                                <span class="nav-title">Dashboard</span>
+                            </a>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                        class="nav-icon fa fa-lock"></i><span class="nav-title">Manage items</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="form-layouts.html">Add item</a> </li>
+                                    <li> <a href="#">Remove items</a> </li>
+                                    <li> <a href="tables-editable.html">edit items</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="" href="page-account-settings.html" aria-expanded="false"><i
+                                        class="nav-icon fa fa-user"></i><span class="nav-title">Account
+                                        Settings</span></a>
+                            </li>
+                            <li>
+                                <a href="auth-login.html"><i class="nav-icon zmdi zmdi-power"></i> <span class="nav-title">Logout</span></a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                    <!-- end sidebar-nav -->
+                </aside>
+                <!-- end app-navbar -->
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-md-12 m-b-30">
+                                <!-- begin page title -->
+                                <div class="d-block d-lg-flex flex-nowrap align-items-center">
+                                    <div class="page-title mr-4 pr-4 border-right">
+                                        <h1>Dashboard</h1>
+                                    </div>
+                                    <div class="breadcrumb-bar align-items-center">
+                                        <nav>
+                                            <ol class="breadcrumb p-0 m-b-0">
+                                                <li class="breadcrumb-item">
+                                                    <a href="index.html"><i class="ti ti-home"></i></a>
+                                                </li>
+                                                <li class="breadcrumb-item">
+                                                    Dashboard
+                                                </li>
+                                                <li class="breadcrumb-item active text-primary" aria-current="page">
+                                                    Default</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- end page title -->
+                            </div>
+                        </div>
+                        <!-- Notification -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="alert border-0 alert-primary bg-gradient m-b-30 alert-dismissible fade show border-radius-none"
+                                    role="alert">
+                                    <strong>Holy guacamole!</strong> You should check in on some of those
+                                    fields below.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="ti ti-close"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card card-statistics">
+                                    <div class="row no-gutters">
+                                        <div class="col-xxl-3 col-lg-6">
+                                            <div class="p-20 border-lg-right border-bottom border-xxl-bottom-0">
+                                                <div class="d-flex m-b-10">
+                                                    <p class="mb-0 font-regular text-muted font-weight-bold">Total
+                                                        Visits</p>
+                                                    <a class="mb-0 ml-auto font-weight-bold" href="#"><i
+                                                            class="ti ti-more-alt"></i> </a>
+                                                </div>
+                                                <div class="d-block d-sm-flex h-100 align-items-center">
+                                                    <div class="apexchart-wrapper">
+                                                        <div id="analytics7"></div>
+                                                    </div>
+                                                    <div
+                                                        class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                                        <h3 class="mb-0"><i class="icon-arrow-up-circle"></i> 15,640
+                                                        </h3>
+                                                        <p>Monthly visitor</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-6">
+                                            <div class="p-20 border-xxl-right border-bottom border-xxl-bottom-0">
+                                                <div class="d-flex m-b-10">
+                                                    <p class="mb-0 font-regular text-muted font-weight-bold">Total Cost
+                                                    </p>
+                                                    <a class="mb-0 ml-auto font-weight-bold" href="#"><i
+                                                            class="ti ti-more-alt"></i> </a>
+                                                </div>
+                                                <div class="d-block d-sm-flex h-100 align-items-center">
+                                                    <div class="apexchart-wrapper">
+                                                        <div id="analytics8"></div>
+                                                    </div>
+                                                    <div
+                                                        class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                                        <h3 class="mb-0"><i class="icon-arrow-up-circle"></i> 16,656
+                                                        </h3>
+                                                        <p>This month</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-6">
+                                            <div class="p-20 border-lg-right border-bottom border-lg-bottom-0">
+                                                <div class="d-flex m-b-10">
+                                                    <p class="mb-0 font-regular text-muted font-weight-bold">Total Sales
+                                                    </p>
+                                                    <a class="mb-0 ml-auto font-weight-bold" href="#"><i
+                                                            class="ti ti-more-alt"></i> </a>
+                                                </div>
+                                                <div class="d-block d-sm-flex h-100 align-items-center">
+                                                    <div class="apexchart-wrapper">
+                                                        <div id="analytics9"></div>
+                                                    </div>
+                                                    <div
+                                                        class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                                        <h3 class="mb-0"><i class="icon-arrow-up-circle"></i>569</h3>
+                                                        <p>Avg. Sales per day</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-6">
+                                            <div class="p-20">
+                                                <div class="d-block d-sm-flex h-100 align-items-center">
+                                                    <div class="apexchart-wrapper">
+                                                        <div id="analytics10"></div>
+                                                    </div>
+                                                    <div class="statistics ml-sm-auto mt-4 mt-sm-0 pr-sm-5">
+                                                        <ul class="list-style-none p-0">
+                                                            <li class="d-flex py-1">
+                                                                <span><i class="fa fa-circle text-primary pr-2"></i>
+                                                                    Redirect Visits</span> <span
+                                                                    class="pl-2 font-weight-bold">456</span>
+                                                            </li>
+                                                            <li class="d-flex py-1"><span><i
+                                                                        class="fa fa-circle text-warning pr-2"></i> New
+                                                                    Visits</span> <span
+                                                                    class="pl-2 font-weight-bold">256</span></li>
+                                                            <li class="d-flex py-1"><span><i
+                                                                        class="fa fa-circle text-info pr-2"></i> Direct
+                                                                    Visits</span> <span
+                                                                    class="pl-2 font-weight-bold">128</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+
+                        <!-- end row -->
+                        <!-- event Modal -->
+                        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog"
+                            aria-labelledby="verticalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="verticalCenterTitle">Add New Event</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="modelemail">Event Name</label>
+                                                <input type="email" class="form-control" id="modelemail">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Choose Event Color</label>
+                                                <select class="form-control">
+                                                    <option>Primary</option>
+                                                    <option>Warning</option>
+                                                    <option>Success</option>
+                                                    <option>Danger</option>
+                                                </select>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 m-b-30">
+                                <!-- begin page title -->
+                                <div class="d-block d-sm-flex flex-nowrap align-items-center">
+                                    <div class="page-title mb-2 mb-sm-0">
+                                        <h1>Ecommerce</h1>
+                                    </div>
+                                    <div class="ml-auto d-flex align-items-center">
+                                        <nav>
+                                            <ol class="breadcrumb p-0 m-b-0">
+                                                <li class="breadcrumb-item">
+                                                    <a href="index.html"><i class="ti ti-home"></i></a>
+                                                </li>
+                                                <li class="breadcrumb-item">
+                                                    Dashboard
+                                                </li>
+                                                <li class="breadcrumb-item active text-primary" aria-current="page">
+                                                    Ecommerce</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- end page title -->
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex m-b-0 ecommerce-contant-text h-100">
+                                            <div class="w-100">
+                                                <div class="row p-3">
+                                                    <div class="col">
+                                                        <h3 class="mb-0">$65,456</h3>
+                                                        <small class="d-block">Last 6 months</small>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h5 class="text-muted mb-0">Revenue</h5>
+                                                        <strong class="text-danger m-t-5"><i
+                                                                class="zmdi zmdi-long-arrow-up font-weight-bold"></i>
+                                                            N/A</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo3" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex ecommerce-contant-text m-b-0 h-100">
+                                            <div class="w-100">
+                                                <div class="row p-3">
+                                                    <div class="col">
+                                                        <h3 class="mb-0">52%</h3>
+                                                        <small class="d-block">Past 12 hours</small>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h5 class="text-muted mb-0">Conversion Rate</h5>
+                                                        <strong class="text-primary m-t-5"><i
+                                                                class="zmdi zmdi-long-arrow-up font-weight-bold"></i>
+                                                            5.35%</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo1" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex m-b-0 ecommerce-contant-text h-100">
+                                            <div class="w-100">
+                                                <div class="w-100">
+                                                    <div class="row p-3">
+                                                        <div class="col">
+                                                            <h3 class="mb-0">605</h3>
+                                                            <small class="d-block">Last 90 days</small>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <h5 class="text-muted mb-0">Transactions</h5>
+                                                            <strong class="text-orange m-t-5"><i
+                                                                    class="zmdi zmdi-long-arrow-up font-weight-bold"></i>
+                                                                4.65%</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo2" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex m-b-0 ecommerce-contant-text h-100">
+                                            <div class="w-100">
+                                                <div class="row p-3">
+                                                    <div class="col">
+                                                        <h3 class="mb-0">5,687</h3>
+                                                        <small class="d-block">Last 3 months</small>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h5 class="text-muted mb-0">Purchases</h5>
+                                                        <strong class="text-success m-t-5"><i
+                                                                class="zmdi zmdi-long-arrow-up font-weight-bold"></i>
+                                                            9.89%</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo4" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-8 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex align-items-center justify-content-between">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Top selling products</h4>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-xs" href="#!">Export <i
+                                                    class="zmdi zmdi-download pl-1"></i> </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body scrollbar scroll_dark pt-0" style="max-height: 350px;">
+                                        <div class="datatable-wrapper table-responsive">
+                                            <table id="datatable" class="table table-borderless table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Price</th>
+                                                        <th>In stock</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Cold Shoulder Bling Dress</td>
+                                                        <td>$65.342</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 80%;" aria-valuenow="80"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>PlayStation 4 Pro 1TB Console</td>
+                                                        <td>$47.655</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 36%;" aria-valuenow="36"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Extra Fine Wool Jumpers</td>
+                                                        <td>$56.479</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 60%;" aria-valuenow="60"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-danger-inverse">Canceled</span>
+                                                        </td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Long Sleeve Bow Top</td>
+                                                        <td>$04.786</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 50%;" aria-valuenow="50"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Shine Stripe Long Sleeve Ruffle</td>
+                                                        <td>$23.456</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 75%;" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>Long Sleeve Micro Thermal Shirt</td>
+                                                        <td>$65.598</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-info-inverse">info</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Standard Fit Bomber Sweater</td>
+                                                        <td>$87.659</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 45%;" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-warning-inverse">Warning</span>
+                                                        </td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>Standard Fit Crew T-Shirt</td>
+                                                        <td>$32.466</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 55%;" aria-valuenow="55"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>Standard Fit Short Sleeve V-Neck</td>
+                                                        <td>$03.544</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 70%;" aria-valuenow="70"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>Sanus Classic Small Full Motion Wall</td>
+                                                        <td>$14.489</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 65%;" aria-valuenow="65"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11</td>
+                                                        <td>Jena Gaines</td>
+                                                        <td>$78.654</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 47%;" aria-valuenow="47"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
+                                                        <td>Quinn Flynn</td>
+                                                        <td>$23.486</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 96%;" aria-valuenow="96"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13</td>
+                                                        <td>Charde Marshall</td>
+                                                        <td>$65.453</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 74%;" aria-valuenow="74"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14</td>
+                                                        <td>Haley Kennedy</td>
+                                                        <td>$78.645</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 62%;" aria-valuenow="62"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>15</td>
+                                                        <td>Tatyana Fitzpatrick</td>
+                                                        <td>$65.342</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 55%;" aria-valuenow="55"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>16</td>
+                                                        <td>Michael Silva</td>
+                                                        <td>$07.456</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 47%;" aria-valuenow="47"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17</td>
+                                                        <td>Paul Byrd</td>
+                                                        <td>$36.478</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 36%;" aria-valuenow="36"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>18</td>
+                                                        <td>Gloria Little</td>
+                                                        <td>$84.798</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 47%;" aria-valuenow="47"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>Bradley Greer</td>
+                                                        <td>$12.356</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 65%;" aria-valuenow="65"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20</td>
+                                                        <td>Dai Rios</td>
+                                                        <td>$45.655</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 85%;" aria-valuenow="85"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>21</td>
+                                                        <td>Jenette Caldwell</td>
+                                                        <td>$47.586</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 47%;" aria-valuenow="47"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22</td>
+                                                        <td>Yuri Berry</td>
+                                                        <td>$36.756</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 63%;" aria-valuenow="63"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>23</td>
+                                                        <td>Caesar Vance</td>
+                                                        <td>$78.659</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 96%;" aria-valuenow="96"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>24</td>
+                                                        <td>Doris Wilder</td>
+                                                        <td>$56.484</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 87%;" aria-valuenow="87"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>25</td>
+                                                        <td>Angelica Ramos</td>
+                                                        <td>$36.796</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 98%;" aria-valuenow="98"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>26</td>
+                                                        <td>Gavin Joyce</td>
+                                                        <td>$25.365</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 87%;" aria-valuenow="87"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27</td>
+                                                        <td>Jennifer Chang</td>
+                                                        <td>$78.489</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 70%;" aria-valuenow="70"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>28</td>
+                                                        <td>Brenden Wagner</td>
+                                                        <td>$35.987</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 65%;" aria-valuenow="65"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>29</td>
+                                                        <td>Fiona Green</td>
+                                                        <td>$78.464</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 75%;" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30</td>
+                                                        <td>Shou Itou</td>
+                                                        <td>$61.444</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 85%;" aria-valuenow="85"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>31</td>
+                                                        <td>Michelle House</td>
+                                                        <td>$85.488</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 47%;" aria-valuenow="47"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>Suki Burks</td>
+                                                        <td>$89.463</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 66%;" aria-valuenow="66"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>33</td>
+                                                        <td>Prescott Bartlett</td>
+                                                        <td>$23.464</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 62%;" aria-valuenow="62"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>34</td>
+                                                        <td>Gavin Cortez</td>
+                                                        <td>$12.254</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 45%;" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>35</td>
+                                                        <td>Martena Mccray</td>
+                                                        <td>$24.478</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 36%;" aria-valuenow="36"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>36</td>
+                                                        <td>Unity Butler</td>
+                                                        <td>$36.478</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 45%;" aria-valuenow="45"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>37</td>
+                                                        <td>Howard Hatfield</td>
+                                                        <td>$48.654</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 96%;" aria-valuenow="96"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>38</td>
+                                                        <td>Hope Fuentes</td>
+                                                        <td>$78.654</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 47%;" aria-valuenow="47"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td>Vivian Harrell</td>
+                                                        <td>$26.154</td>
+                                                        <td>
+                                                            <div class="progress my-3" style="height: 3px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 56%;" aria-valuenow="56"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="badge badge-success-inverse">Active</span></td>
+                                                        <td> <a class="mr-3" href="javascript:void(0);"><i
+                                                                    class="fe fe-edit"></i></a><a
+                                                                href="javascript:void(0);"><i
+                                                                    class="fe fe-trash-2"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Name</th>
+                                                        <th>Price</th>
+                                                        <th>In stock</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Lifetime sales</h4>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fe fe-circle"></i>
+                                            </a>
+                                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                                <h6 class="mb-1">Action</h6>
+                                                <a class="dropdown-item" href="#!"><i
+                                                        class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                                <a class="dropdown-item" href="#!"><i
+                                                        class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                                <a class="dropdown-item" href="#!"><i
+                                                        class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                                <h6 class="mb-1 mt-3">Export</h6>
+                                                <a class="dropdown-item" href="#!"><i
+                                                        class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                                <a class="dropdown-item" href="#!"><i
+                                                        class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>We only started collecting data from February 2019 </h5>
+                                        <p>Questions about the Net Earnings number? <a
+                                                class="btn btn-square btn-inverse-success btn-xs ml-1" href="#">Click
+                                                here</a> </p>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-8">
+                                                <div class="morris-wrapper">
+                                                    <div id="morrisecommerce1" style="height: 260px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 mt-4">
+                                                <div class="mb-3">
+                                                    <h3 class="mb-0">680</h3>
+                                                    <p class="mb-0 text-info">Total sales</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="mb-0">800</h3>
+                                                    <p class="mb-0 text-primary">Open campaign</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="mb-0">500</h3>
+                                                    <p class="mb-0">Daily sales</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <!-- end app-main -->
+        </div>
+        <!-- end app-container -->
+        <!-- begin footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-center text-sm-left">
+                    <p>&copy; Powered by <a href="https://deboengineering.com"> debo-engineering</a></p>
+                </div>
+                <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
+                    <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+    <!-- end app-wrap -->
+    </div>
+    <!-- end app -->
+
+    <!-- plugins -->
+    <script src="assets/js/vendors.js"></script>
+
+    <!-- custom app -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>
