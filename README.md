@@ -1,1 +1,1 @@
-This Website is an online plant shop website developed by <a href="github.com/hshehabu" target="_blank" >Hamza shihabu</a> ,<a href="github.com/abshwabu" target="_blank">Abdulaziz shewabu</a> and <a href="github.com/abduredev"target="_blank">Abdurehman shekh Anwar</a> for Debo engineering.
+This Website is an online plant shop website developed by <a href="https://github.com/hshehabu">Hamza shihabu</a> ,<a href="https://github.com/abshwabu">Abdulaziz shewabu</a> and <a href="https://github.com/aabduredev">Abdurehman shekh Anwar</a> for Debo engineering.
